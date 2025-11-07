@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^([a-z0-9]{6})\.hugocm\.es$ [NC]
+RewriteRule ^$ /resolver.php?code=%1 [L]
